@@ -1,5 +1,5 @@
 .intro {
-  background-image: url("../images/Coffee-pot@1x.png"),
+  background-image: url("/img/Coffee-pot@1x.png"),
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-blend-mode: overlay;
   border-radius: 10px;
@@ -9,12 +9,24 @@
   margin-bottom: 120px;
 }
 .intro__inner {
+  padding: 100px 24px 100px;
+  text-align: center;
 }
 .intro__title {
+  color: var(--light-cream);
+  font-size: 33px;
+  line-height: 40px;
+  font-family: "fraunces-9pt-black";
 }
 .intro__text {
+  color: var(--light-cream);
+  font-size: 12px;
+  line-height: 21px;
+  margin-top: 24px;
+  margin-bottom: 39px;
 }
-.link {
-}
+
 .intro__link {
+  font-size: 15px;
+  line-height: 20px;
 }
