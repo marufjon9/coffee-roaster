@@ -1,10 +1,14 @@
 .link {
   border-radius: 6px;
-  background: #0e8784;
+  background: var(--main-darkcyan);
   text-decoration: none;
   padding: 15px 31px;
   color: var(--light-cream);
   font-family: "fraunces-9pt-black";
   font-size: 18px;
   line-height: 25px;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: var(--main-hover);
+  }
 }

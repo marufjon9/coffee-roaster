@@ -1,0 +1,119 @@
+.collection {
+  margin-bottom: 120px;
+}
+.collection__title {
+  font-family: "fraunces-9pt-black";
+  font-size: 30px;
+  line-height: 72px;
+  text-align: center;
+  background: var(--secondary-grey);
+  background-image: linear-gradient(
+    180deg,
+    rgba(254, 252, 247, 0.0001) 0%,
+    #fefcf7 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.collection__list {
+  margin-top: 13px;
+}
+.coffee {
+  margin: 0 auto;
+}
+.coffee__img {
+  width: 200px;
+  height: 151px;
+  margin: 0 auto;
+}
+.coffee__text-box {
+  margin: 0 auto;
+  max-width: 282px;
+}
+.coffee__title {
+  font-family: "fraunces-9pt-black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--main-darkgrey);
+  margin-top: 24px;
+}
+.coffee__text {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 38px;
+}
+
+@media only screen and (min-width: 375px) {
+  .collection__title {
+    font-size: 40px;
+  }
+  .coffee__text {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .collection {
+    margin-bottom: 129px;
+  }
+  .coffee {
+    display: flex;
+    max-width: 500px;
+  }
+  .collection__title {
+    font-size: 76px;
+    line-height: 72px;
+    margin-bottom: -40px;
+  }
+  .coffee__title {
+    text-align: left;
+  }
+  .coffee__text {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 655px) {
+  .coffee {
+    max-width: 573px;
+  }
+  .collection__title {
+    font-size: 96px;
+    line-height: 72px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .collection {
+    margin-bottom: 188px;
+  }
+  .collection__title {
+    font-size: 150px;
+  }
+  .coffee {
+    display: block;
+    max-width: 255px;
+  }
+  .collection__list {
+    display: flex;
+  }
+  .coffee__title {
+    text-align: center;
+  }
+  .coffee__text {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .collection__title {
+    letter-spacing: 17px;
+  }
+}

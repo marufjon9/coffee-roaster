@@ -9,7 +9,7 @@
   margin-bottom: 120px;
 }
 .intro__inner {
-  padding: 100px 24px 100px;
+  padding: 70px 20px 70px;
   text-align: center;
 }
 .intro__title {
@@ -22,11 +22,116 @@
   color: var(--light-cream);
   font-size: 12px;
   line-height: 21px;
-  margin-top: 24px;
-  margin-bottom: 39px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  opacity: 0.8;
 }
-
 .intro__link {
   font-size: 15px;
   line-height: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+  .intro {
+    background-image: url("../img/Coffee-pot@1x.png"),
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-blend-mode: overlay;
+    background-position: calc(50% + 119px) calc(100% + 0px);
+    background-repeat: no-repeat;
+    background-size: calc(100% + 928px) calc(100% + 352px);
+  }
+  .intro__inner {
+    padding: 100px 24px 100px;
+  }
+  .intro__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .intro__text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 24px;
+    margin-bottom: 39px;
+  }
+  .intro__link {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 575px) {
+  .intro {
+    background-image: url(../img/Coffee-pot@1x.png);
+    background-position: calc(50% + 308px) bottom;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 629px) calc(100% + 342px);
+  }
+  .intro__inner {
+    padding: 104px 58px 104px 58px;
+    text-align: left;
+    max-width: 529px;
+    width: 100%;
+  }
+  .intro__title {
+    max-width: 329px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    background-image: url(../img/Coffee-pot@1x.png);
+    background-position: calc(100% + 490px) calc(100% + 0px);
+    background-repeat: no-repeat;
+    background-size: calc(100% + 540px);
+  }
+  .intro__inner {
+    padding: 117px 85px;
+    text-align: left;
+    max-width: 623px;
+    width: 100%;
+  }
+  .intro__title {
+    font-size: 72px;
+    line-height: 72px;
+    color: var(--light-cream);
+    max-width: 663px;
+  }
+  .intro__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 32px;
+    margin-bottom: 56px;
+    max-width: 392px;
+    width: 100%;
+    text-align: left;
+  }
+  .link {
+    display: inline-block;
+    text-align: center;
+    color: var(--light-cream);
+    text-decoration: none;
+    background-color: var(--main-darkcyan);
+    border-radius: 6px;
+    padding: 15px 31px 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .intro {
+    background-image: url(../img/Coffee-pot@1x.png);
+    background-position: calc(100% + 677px) calc(100% + 179px);
+    background-repeat: no-repeat;
+    background-size: calc(100% + 697px);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../img/Coffee-pot@2x.png");
+  }
 }
