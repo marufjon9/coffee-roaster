@@ -1,5 +1,5 @@
 .commitments {
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 .commitments__wrapper {
   display: flex;
@@ -9,8 +9,6 @@
 }
 .commitment__image-wrapper {
   margin: 0 auto;
-}
-.commitment__text-wrapper {
 }
 .commitment__title {
   color: var(--main-darkgrey);
@@ -27,7 +25,7 @@
 
 @media only screen and (min-width: 375px) {
   .commitments {
-    margin-bottom: 120px;
+    margin-bottom: 198px;
   }
   .commitments__wrapper {
     gap: 48px;
@@ -44,7 +42,7 @@
 
 @media only screen and (min-width: 575px) {
   .commitments {
-    margin-bottom: 144px;
+    margin-bottom: 244px;
   }
 }
 
