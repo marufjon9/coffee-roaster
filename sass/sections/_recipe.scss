@@ -28,13 +28,16 @@
 .recipe__summary {
   color: var(--secondary-grey);
   font-family: "fraunces-9pt-black";
-  font-size: 24px;
+  font-size: 25px;
   line-height: 28px;
   // list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  // justify-content: space-between;
+  // align-items: first baseline;
+  grid-template-columns: 0.86fr 0.14fr;
   align-items: first baseline;
 }
+
 summary::marker {
   content: none;
 }
@@ -47,16 +50,62 @@ summary::after {
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
+  transform: rotate(0.5turn);
+  transition: 0.4s ease;
+  justify-self: flex-end;
 }
+
+details[open] summary::after {
+  content: "";
+  background-image: url(/img/up-arrow.svg);
+  width: 18px;
+  height: 11px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  transform: rotate(1turn);
+}
+
 .recipe__container {
+  margin-top: 32px;
+  margin-bottom: 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .recipe__content {
+  background-color: #f4f1eb;
+  border-radius: 8px;
+  padding: 24px;
+  transition: 0.4s ease;
+  &:hover {
+    background-color: var(--main-orange);
+  }
+}
+details[open]:last-child .recipe__container {
+  margin-bottom: 0;
+}
+.recipe__content.active:hover h3 {
+  color: #000;
+}
+.recipe__content.active:hover p {
+  color: #000;
 }
 .recipe__title {
+  color: var(--main-darkgrey);
+  font-family: "fraunces-9pt-black";
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 .recipe__text {
+  color: var(--main-darkgrey);
+  font-size: 16px;
+  line-height: 26px;
 }
 .recipe__bottom {
+  margin-top: 80px;
 }
 .recipe__textbox {
 }
@@ -68,4 +117,45 @@ summary::after {
 }
 .recipe__link {
   display: inline-block;
+}
+.active {
+  background-color: #0e8784;
+}
+.recipe__content.active h3 {
+  color: #fff;
+}
+.recipe__content.active p {
+  color: #fff;
+}
+
+@media only screen and (min-width: 375px) {
+  .recipe__summary {
+    grid-template-columns: 0.8fr 0.2fr;
+  }
+  .recipe__content {
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .recipe__bottom {
+    margin-top: 120px;
+  }
+  .recipe__container {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .recipe__content {
+    padding: 32px 26px 84px 25px;
+  }
+  .recipe__container {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  .recipe__content {
+    max-width: 228px;
+    width: 100%;
+  }
 }
