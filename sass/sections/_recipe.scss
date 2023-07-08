@@ -11,10 +11,35 @@
 .options__list {
 }
 .options__item {
+  min-width: 255px;
+  border-bottom: 1px solid rgba(131, 136, 143, 0.26);
+  padding-bottom: 24px;
+  padding-top: 24px;
+  cursor: pointer;
+}
+.options__item:first-child {
+  padding-top: 0;
 }
 .options__num {
+  color: var(--main-darkcyan);
+  font-family: "fraunces-9pt-black";
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 28.5px;
+  opacity: 0.4;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 .options__opt {
+  color: var(--main-darkgrey);
+  font-family: "fraunces-9pt-black";
+  font-size: 24px;
+  line-height: 32px;
+  opacity: 0.4;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 .recipe__right {
 }
@@ -106,17 +131,36 @@ details[open]:last-child .recipe__container {
 }
 .recipe__bottom {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .recipe__textbox {
+  margin-bottom: 40px;
+  background-color: var(--main-blue);
+  border-radius: 10px;
+  padding: 27px 64px;
 }
 .recipe__bottom-heading {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.5;
 }
 .recipe__bottom-text {
+  color: #fff;
+  font-family: "fraunces-9pt-black";
+  font-size: 24px;
+  line-height: 40px;
+  span {
+    color: var(--main-darkcyan);
+  }
 }
 .link {
 }
 .recipe__link {
-  display: inline-block;
 }
 .active {
   background-color: #0e8784;
@@ -135,6 +179,9 @@ details[open]:last-child .recipe__container {
   .recipe__content {
     padding: 25px;
   }
+  .recipe {
+    margin-bottom: 120px;
+  }
 }
 
 @media only screen and (min-width: 575px) {
@@ -144,6 +191,9 @@ details[open]:last-child .recipe__container {
   .recipe__container {
     flex-direction: row;
     gap: 10px;
+  }
+  .recipe {
+    margin-bottom: 168px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -157,5 +207,34 @@ details[open]:last-child .recipe__container {
   .recipe__content {
     max-width: 228px;
     width: 100%;
+  }
+  .recipe__summary {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .recipe__bottom {
+    margin-top: 88px;
+  }
+  .recipe__container {
+    margin-top: 56px;
+    margin-bottom: 88px;
+    gap: 23px;
+  }
+  .recipe__summary {
+    font-size: 40px;
+    grid-template-columns: 0.9fr 0.1fr;
+  }
+
+  .recipe__wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    gap: 125px;
+    justify-content: center;
+  }
+  .recipe__left {
+    display: block;
   }
 }
