@@ -1,8 +1,6 @@
 .headquarters {
   margin-bottom: 80px;
 }
-.headquarters__wrapper {
-}
 .headquarters__title {
   color: var(--secondary-grey);
   font-size: 24px;
@@ -15,8 +13,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-}
-.list {
 }
 .list__item {
   text-align: center;
@@ -71,7 +67,6 @@
   display: flex;
   flex-direction: column;
 }
-
 @media only screen and (min-width: 375px) {
   .headquarters__title {
     margin-bottom: 72px;
@@ -83,7 +78,6 @@
     gap: 80px;
   }
 }
-
 @media only screen and (min-width: 625px) {
   .headquarters {
     margin-bottom: 120px;
@@ -116,13 +110,11 @@
     font-size: 24px;
   }
 }
-
 @media only screen and (min-width: 800px) {
   .headquarters {
     margin-bottom: 168px;
     padding-left: 85px;
   }
-
   .headquarters__list {
     gap: 90px;
   }
@@ -135,7 +127,6 @@
     line-height: 26px;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   .headquarters__list {
     gap: 95px;

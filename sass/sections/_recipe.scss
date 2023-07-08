@@ -1,0 +1,71 @@
+.recipe {
+  margin-bottom: 80px;
+}
+.recipe__wrapper {
+}
+.recipe__left {
+  display: none;
+}
+.options {
+}
+.options__list {
+}
+.options__item {
+}
+.options__num {
+}
+.options__opt {
+}
+.recipe__right {
+}
+.recipe__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.recipe__dropdown {
+}
+.recipe__summary {
+  color: var(--secondary-grey);
+  font-family: "fraunces-9pt-black";
+  font-size: 24px;
+  line-height: 28px;
+  // list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+summary::marker {
+  content: none;
+}
+summary::after {
+  content: "";
+  background-image: url(/img/up-arrow.svg);
+  width: 18px;
+  height: 11px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+.recipe__container {
+}
+.recipe__content {
+}
+.recipe__title {
+}
+.recipe__text {
+}
+.recipe__bottom {
+}
+.recipe__textbox {
+}
+.recipe__bottom-heading {
+}
+.recipe__bottom-text {
+}
+.link {
+}
+.recipe__link {
+  display: inline-block;
+}
